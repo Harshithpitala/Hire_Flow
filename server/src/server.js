@@ -5,6 +5,7 @@ const { Server } = require('socket.io');
 const app = require('./app');
 const connectDB = require('./config/db');
 const initSocketServer = require('./sockets/socketHandler');
+const allowedOrigins = require('./config/cors');
 const dns=require('dns');
 dns.setServers(['1.1.1.1','8.8.8.8'])
 const PORT = process.env.PORT || 5000;
@@ -15,7 +16,7 @@ const server = http.createServer(app);
 // Initialize Socket.IO instance attached to HTTP server
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: allowedOrigins,
     methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
     credentials: true
   }

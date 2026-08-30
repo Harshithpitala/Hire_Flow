@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
+const allowedOrigins = require('./config/cors');
 
 // Middleware & Routers
 const { globalLimiter } = require('./middleware/security');
@@ -24,11 +25,6 @@ const app = express();
 app.use(helmet());
 
 // 2. CORS Configuration
-const allowedOrigins = [
-  process.env.CLIENT_URL || 'http://localhost:5173',
-  'http://localhost:3000'
-];
-
 app.use(
   cors({
     origin: (origin, callback) => {

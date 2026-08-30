@@ -37,8 +37,9 @@ directory to Vercel.
    `VITE_API_BASE_URL` to `https://<your-render-service>.onrender.com/api` and
    `VITE_SOCKET_URL` to `https://<your-render-service>.onrender.com`.
 3. Copy the Vercel production URL into the Render `CLIENT_URL` environment
-   variable and redeploy the API. This enables browser requests and Socket.IO
-   connections from the live client.
+   variable, including its protocol and without a trailing slash (for example,
+   `https://your-app.vercel.app`), and redeploy the API. This enables browser
+   requests and Socket.IO connections from the live client.
 
 Never commit real `.env` files. The checked-in `.env.example` files list all
 required settings without exposing credentials.
