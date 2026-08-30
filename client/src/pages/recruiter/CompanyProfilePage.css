@@ -1,0 +1,67 @@
+.company-profile-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.company-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.company-main-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.company-subtitle {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.company-success-banner {
+  background-color: var(--success-bg);
+  color: var(--success);
+  border: 1px solid #BBF7D0;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.company-tab-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.company-tab-btn:hover {
+  color: var(--text);
+}
+
+.company-tab-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.company-pane {
+  padding: 2rem;
+}

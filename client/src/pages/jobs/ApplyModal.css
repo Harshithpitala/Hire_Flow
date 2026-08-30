@@ -1,0 +1,36 @@
+.apply-job-banner {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.875rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.apply-job-banner strong {
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.apply-job-banner span {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.resume-notice {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  background: rgba(79, 70, 229, 0.05);
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  padding: 0.625rem 0.875rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+}
+
+.apply-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}

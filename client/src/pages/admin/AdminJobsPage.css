@@ -1,0 +1,45 @@
+.admin-jobs-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.admin-jobs-header {
+  margin-bottom: 1.5rem;
+}
+
+.admin-jobs-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.admin-jobs-subtitle {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.job-info-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-info-cell strong {
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.job-info-cell span {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.posted-by-cell {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8125rem;
+}
+
+.posted-by-cell small {
+  color: var(--muted);
+}

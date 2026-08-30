@@ -1,0 +1,26 @@
+.saved-jobs-container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.saved-jobs-header {
+  margin-bottom: 2rem;
+}
+
+.saved-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.saved-subtitle {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.saved-jobs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}

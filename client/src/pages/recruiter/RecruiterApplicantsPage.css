@@ -1,0 +1,167 @@
+.applicants-board-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.applicants-header {
+  margin-bottom: 1.5rem;
+}
+
+.applicants-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.applicants-subtitle {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.status-tabs-row {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.status-tab-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.status-tab-btn:hover {
+  color: var(--text);
+}
+
+.status-tab-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.candidate-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.candidate-cell strong {
+  color: var(--text);
+  font-size: 0.9375rem;
+}
+
+.candidate-cell span {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.candidate-phone {
+  font-size: 0.75rem !important;
+}
+
+.role-subtext {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.mini-skills-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.candidate-skill-tag {
+  font-size: 0.75rem;
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--radius-sm);
+}
+
+.status-dropdown {
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.status-dropdown:focus {
+  border-color: var(--primary);
+}
+
+/* Candidate Modal Styles */
+.candidate-overview-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+}
+
+.candidate-overview-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.headline-text {
+  font-size: 0.9375rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.candidate-modal-section {
+  margin-bottom: 1.25rem;
+}
+
+.candidate-modal-section h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.modal-cover-letter {
+  background: var(--background);
+  padding: 0.875rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.candidate-modal-skills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.modal-links-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal-links-row a {
+  font-size: 0.875rem;
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+}

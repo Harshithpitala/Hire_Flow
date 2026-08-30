@@ -1,0 +1,159 @@
+.admin-analytics-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.admin-analytics-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.admin-analytics-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.admin-analytics-subtitle {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.total-placements-kpi {
+  padding: 1rem 1.5rem;
+  background: var(--success-bg);
+  border-color: #BBF7D0;
+  display: flex;
+  flex-direction: column;
+}
+
+.total-placements-kpi span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #166534;
+}
+
+.total-placements-kpi strong {
+  font-size: 1.35rem;
+  color: #15803D;
+  font-weight: 800;
+}
+
+.admin-metric-card {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.registration-bars-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  height: 180px;
+  padding: 1.5rem 0 0.5rem 0;
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.month-trend-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.trend-total-val {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.stacked-bar {
+  width: 32px;
+  height: 120px;
+  background-color: var(--background);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+}
+
+.bar-segment.student-seg {
+  background-color: var(--primary);
+}
+
+.bar-segment.recruiter-seg {
+  background-color: var(--secondary);
+}
+
+.month-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.trend-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.student-dot { background-color: var(--primary); }
+.recruiter-dot { background-color: var(--secondary); }
+
+.industry-distribution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.industry-stat-box {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.industry-stat-box strong {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.industry-stat-box span {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .admin-analytics-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .industry-distribution-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,42 @@
+.post-job-container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.post-job-header {
+  margin-bottom: 2rem;
+}
+
+.post-job-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.post-job-subtitle {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.post-job-form {
+  padding: 2.25rem;
+}
+
+.section-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}

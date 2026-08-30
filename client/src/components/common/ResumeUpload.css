@@ -1,0 +1,87 @@
+.resume-upload-wrapper {
+  margin-top: 1rem;
+}
+
+.resume-active-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.resume-doc-icon {
+  font-size: 2rem;
+  background: rgba(79, 70, 229, 0.08);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.resume-meta-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-name {
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.resume-date {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.resume-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resume-preview-link {
+  text-decoration: none;
+}
+
+.resume-dropzone {
+  border: 2px dashed #CBD5E1;
+  background: var(--background);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.resume-dropzone:hover {
+  border-color: var(--primary);
+  background: rgba(79, 70, 229, 0.02);
+}
+
+.dropzone-icon {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-dropzone strong {
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.resume-dropzone p {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}

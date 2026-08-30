@@ -1,0 +1,44 @@
+.recruiter-interviews-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.recruiter-interviews-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.interviews-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.interviews-subtitle {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.interviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
